@@ -18,6 +18,13 @@ body {
     box-sizing: border-box;
 }
 
+body > main {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin: 35px 0;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -117,7 +124,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 35px;
-    margin-top: 35px;
 }
 
 .headline {
@@ -230,6 +236,7 @@ header {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .hebergements,
@@ -243,7 +250,6 @@ header {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-    margin-top: 35px;
 }
 
 .hebergements-cards {
@@ -292,7 +298,6 @@ header {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
-    margin-top: 35px;
 }
 
 .populaires-title {
@@ -339,7 +344,6 @@ header {
 .activites {
     width: 100%;
     padding: 30px;
-    margin-top: 35px;
     box-sizing: border-box;
 }
 
@@ -374,7 +378,6 @@ header {
 footer {
     display: flex;
     background-color: var(--main-bg-color);
-    margin-top: 35px;
 }
 
 .footer-column {
@@ -415,6 +418,7 @@ footer {
     /****** Hebergements And Populaires ***********/
     .hebergements-and-populaires {
         flex-direction: column;
+        gap: 50px;
     }
 
     /****** Hebergements ***********/
@@ -425,7 +429,6 @@ footer {
     /****** Populaires ***********/
     .populaires {
         width: 100%;
-        margin-top: 50px;
     }
 
     .populaires-cards {
@@ -458,6 +461,11 @@ footer {
     /* Global */
     body {
         padding: 0;
+    }
+
+    body > main {
+        gap: 30px;
+        margin: 30px 0;
     }
 
     .section-more {
@@ -498,7 +506,6 @@ footer {
     /****** Info Group ***********/
     .info-group {
         padding: 0 20px;
-        margin-top: 30px;
     }
 
     .search-bar {
@@ -534,6 +541,10 @@ footer {
     }
 
     /****** Hebergements And Populaires ***********/
+    .hebergements-and-populaires {
+        gap: 20px;
+    }
+
     .hebergements,
     .populaires {
         border-radius: 0;
@@ -544,7 +555,6 @@ footer {
         order: 2;
         background-color: white;
         padding: 20px;
-        margin-top: 20px;
     }
 
     .hebergements-cards {
@@ -560,7 +570,6 @@ footer {
     .populaires {
         order: 1;
         padding: 30px 20px;
-        margin-top: 30px;
     }
 
     .populaires-cards {
@@ -573,10 +582,6 @@ footer {
     }
 
     /****** Activites ***********/
-    .activites {
-        margin-top: 30px;
-    }
-
     .activites .section-title {
         margin-bottom: 15px;
     }
@@ -602,7 +607,6 @@ footer {
     /****** Footer ***********/
     footer {
         flex-direction: column;
-        margin-top: 30px;
     }
 
     .footer-column {
