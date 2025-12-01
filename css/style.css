@@ -1,29 +1,20 @@
-/****** General ***********/
-* {
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-}
-
+/* Global */
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
-    color: var(--main-color);
+* {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-}
-
-.main-container {
-    width: 100%;
     max-width: 1440px;
     min-width: 320px;
     padding: 0 50px;
+    margin: auto;
     box-sizing: border-box;
 }
 
@@ -62,6 +53,10 @@ a {
     font-weight: 700;
 }
 
+.fa-solid {
+    color: var(--main-color);
+}
+
 .neutral-star {
     color: var(--main-bg-color);
 }
@@ -74,6 +69,7 @@ a {
 .section-more:hover {
     color: var(--main-color);
 }
+
 
 /****** Header ***********/
 header {
@@ -395,10 +391,8 @@ footer {
     color: var(--main-color);
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+/* Tablet version */
 @media (max-width: 1024px) {
     /****** General ***********/
     .card-title {
@@ -454,16 +448,19 @@ footer {
     }
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /****** General ***********/
-    .main-container {
+
+/* Mobile version */
+@media (max-width: 768px) {
+
+    /* Global */
+    body {
         padding: 0;
     }
 
     .section-more {
         margin-top: 15px;
     }
+
 
     /****** Header ***********/
     header {
