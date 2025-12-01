@@ -374,26 +374,27 @@ header {
     padding: 20px 19px;
 }
 
-/****** Footer ***********/
+
+/* Footer */
 footer {
     display: flex;
     background-color: var(--main-bg-color);
 }
 
-.footer-column {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    list-style-type: none;
-    gap: 15px;
+footer > ul {
     flex: 1;
+    padding: 20px;
 }
 
-.footer-title {
-    font-size: 18px;
+footer li:not(:first-child) {
+    margin-top: 15px;
 }
 
-.footer-column a:hover {
+footer h2 {
+    font-size: 1.125em;
+}
+
+footer a:hover {
     color: var(--main-color);
 }
 
@@ -604,12 +605,13 @@ footer {
         height: auto;
     }
 
-    /****** Footer ***********/
+
+    /* Footer */
     footer {
         flex-direction: column;
     }
 
-    .footer-column {
+    footer > ul {
         padding: 30px;
     }
 }
