@@ -86,34 +86,39 @@ img {
     color: var(--main-color);
 }
 
+.subtitle {
+    font-size: 1.125em;
+    font-weight: 700;
+}
+
 
 /* Header */
-header {
+.page-header {
     display: flex;
     justify-content: space-between;
 }
 
-.header-logo {
+.page-header-logo {
     padding: 30px 0;
 }
 
-.header-logo > img {
+.page-header-logo > img {
     width: 61px;
 }
 
-.header-menu > ul {
+.page-header-menu > ul {
     display: flex;
     gap: 68px;
 }
 
-.header-menu a {
+.page-header-menu a {
     display: flex;
     align-items: flex-end;
     height: 35px;
     box-sizing: border-box;
 }
 
-.header-menu a:hover {
+.page-header-menu a:hover {
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
 }
@@ -376,25 +381,21 @@ header {
 
 
 /* Footer */
-footer {
+.page-footer {
     display: flex;
     background-color: var(--main-bg-color);
 }
 
-footer > ul {
+.page-footer > ul {
     flex: 1;
     padding: 20px;
 }
 
-footer li:not(:first-child) {
+.page-footer li:not(:first-child) {
     margin-top: 15px;
 }
 
-footer h2 {
-    font-size: 1.125em;
-}
-
-footer a:hover {
+.page-footer a:hover {
     color: var(--main-color);
 }
 
@@ -475,30 +476,30 @@ footer a:hover {
 
 
     /* Header */
-    header {
+    .page-header {
         flex-direction: column;
         align-items: center;
     }
 
-    .header-menu {
+    .page-header-menu {
         width: 100%;
     }
 
-    .header-menu > ul {
+    .page-header-menu > ul {
         gap: 0;
     }
 
-    .header-menu li {
+    .page-header-menu li {
         width: 100%;
     }
 
-    .header-menu a {
+    .page-header-menu a {
         justify-content: center;
         align-items: flex-start;
         border-bottom: 2px solid var(--main-bg-color);
     }
 
-    .header-menu a:hover {
+    .page-header-menu a:hover {
         border-top: 0;
         border-bottom: 2px solid var(--main-color);
     }
@@ -607,11 +608,11 @@ footer a:hover {
 
 
     /* Footer */
-    footer {
+    .page-footer {
         flex-direction: column;
     }
 
-    footer > ul {
+    .page-footer > ul {
         padding: 30px;
     }
 }
