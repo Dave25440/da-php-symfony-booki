@@ -51,14 +51,6 @@ img {
     color: var(--main-color);
 }
 
-.section-more {
-    font-size: 18px;
-}
-
-.section-more:hover {
-    color: var(--main-color);
-}
-
 .subtitle {
     font-size: 1.125em;
     font-weight: 700;
@@ -186,14 +178,23 @@ img {
 }
 
 
-/****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+/* Accommodations wrapper */
+.accommodations-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 40px;
 }
 
-.hebergements,
+
+/* Accommodations section */
+.section-accommodations {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 2.2;
+}
+
+.section-accommodations,
 .populaires {
     background-color: var(--main-bg-color);
     border-radius: 20px;
@@ -201,15 +202,11 @@ img {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
-.hebergements {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    flex: 2.2;
+.section-accommodations > .subtitle:hover {
+    color: var(--main-color);
 }
 
-.hebergements-cards {
+.section-accommodations-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -370,11 +367,12 @@ img {
     }
 
 
-    /****** Hebergements And Populaires ***********/
-    .hebergements-and-populaires {
+    /* Accommodations wrapper */
+    .accommodations-wrapper {
         flex-direction: column;
         gap: 50px;
     }
+
 
     /****** Populaires ***********/
     .populaires-cards {
@@ -486,28 +484,30 @@ img {
     }
 
 
-    /****** Hebergements And Populaires ***********/
-    .hebergements-and-populaires {
+    /* Accommodations wrapper */
+    .accommodations-wrapper {
         gap: 20px;
     }
 
-    .hebergements,
-    .populaires {
-        border-radius: 0;
-    }
 
-    /****** Hebergements ***********/
-    .hebergements {
+    /* Accommodations section */
+    .section-accommodations {
         gap: 15px;
         order: 2;
         background-color: transparent;
         padding: 20px;
     }
 
-    .hebergements-cards {
+    .section-accommodations,
+    .populaires {
+        border-radius: 0;
+    }
+
+    .section-accommodations-list {
         grid-template-columns: auto;
         gap: 15px;
     }
+
 
     /****** Populaires ***********/
     .populaires {
