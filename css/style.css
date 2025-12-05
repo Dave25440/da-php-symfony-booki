@@ -97,12 +97,6 @@ img {
     gap: 35px;
 }
 
-.section-search > ul {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
 .section-search-header > p {
     margin-top: 0.5em;
 }
@@ -144,6 +138,17 @@ img {
 
 .search-submit.icon {
     display: none;
+}
+
+.section-search-filters {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.section-search-filters > ul {
+    display: flex;
+    gap: 15px;
 }
 
 .search-filter {
@@ -336,12 +341,12 @@ img {
     background-color: var(--main-bg-color);
 }
 
-.page-footer > ul {
+.page-footer > section {
     flex: 1;
     padding: 20px;
 }
 
-.page-footer li:not(:first-child) {
+.page-footer li {
     margin-top: 15px;
 }
 
@@ -354,13 +359,10 @@ img {
 @media (max-width: 1024px) {
 
     /* Search section */
-    .section-search > ul {
-        flex-wrap: wrap;
-    }
-
-    .section-search > ul > li:first-child {
-        width: 100%;
-        margin-bottom: 5px;
+    .section-search-filters {
+        flex-direction: column;
+        align-items: inherit;
+        gap: 20px;
     }
 
 
@@ -368,6 +370,12 @@ img {
     .accommodations-wrapper {
         flex-direction: column;
         gap: 50px;
+    }
+
+
+    /* Accommodations section */
+    .section-accommodations {
+        flex: 1;
     }
 
 
@@ -446,15 +454,6 @@ img {
         padding: 0 20px;
     }
 
-    .section-search > ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .section-search > ul > li:first-child {
-        grid-column: span 2;
-    }
-
     .section-search-form {
         border-radius: 15px;
         box-shadow: 0 0 0 1px var(--main-bg-color) inset;
@@ -473,6 +472,11 @@ img {
         padding: 16px;
         border-radius: 15px;
         filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .section-search-filters > ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .search-filter {
@@ -540,7 +544,7 @@ img {
         flex-direction: column;
     }
 
-    .page-footer > ul {
+    .page-footer > section {
         padding: 30px;
     }
 }
