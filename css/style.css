@@ -4,7 +4,7 @@
     --card-bg-color: #FFFFFF;
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
-    --main-text-color: #000000;
+    --main-txt-color: #000000;
     --filter-bg-color: #DEEBFF;
 }
 
@@ -38,7 +38,8 @@ a {
     text-decoration: none;
 }
 
-h1 {
+h1,
+h2 {
     font-size: 1.375em;
 }
 
@@ -51,13 +52,9 @@ img {
     color: var(--main-color);
 }
 
-.subtitle {
+.title {
     font-size: 1.125em;
     font-weight: 700;
-}
-
-.title {
-    font-size: 1.375em;
 }
 
 
@@ -118,7 +115,7 @@ img {
     display: flex;
     align-items: center;
     background-color: var(--main-bg-color);
-    color: var(--main-text-color);
+    color: var(--main-txt-color);
     padding: 0 17.5px;
     border: 1px solid var(--main-bg-color);
     border-radius: 15px 0 0 15px;
@@ -201,7 +198,7 @@ img {
     padding: 30px;
 }
 
-.section-accommodations > .subtitle:hover {
+.section-accommodations > .title:hover {
     color: var(--main-color);
 }
 
