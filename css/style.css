@@ -43,6 +43,12 @@ h2 {
     font-size: 1.375em;
 }
 
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
 img {
     display: block;
     width: 100%;
@@ -115,12 +121,14 @@ img {
     border-radius: 15px 0 0 15px;
 }
 
-.section-search-form > input[type=search] {
+.section-search-form > input[type="search"] {
     background-color: var(--card-bg-color);
+    width: 17.5ch;
     padding: 0 23px;
     border: 1px solid var(--main-bg-color);
     border-left: 0;
     border-right: 0;
+    box-sizing: border-box;
 }
 
 .section-search-form .fa-magnifying-glass {
@@ -459,7 +467,7 @@ img {
         box-shadow: 0 0 0 1px var(--main-bg-color) inset;
     }
 
-    .section-search-form > input[type=search] {
+    .section-search-form > input[type="search"] {
         flex: 1;
     }
 
