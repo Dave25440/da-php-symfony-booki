@@ -268,20 +268,20 @@ img {
 
 .card.row {
     display: flex;
-    gap: 15px;
 }
 
 .card.row > img {
-    flex: 0.56;
+    width: 33%;
     height: 136px;
     border-radius: 20px 0 0 20px;
 }
 
 .card.row > .card-content {
     justify-content: space-between;
-    flex: 1;
-    padding-left: 0;
+    width: 67%;
+    padding-right: 0;
     margin: 10px 0 5px 0;
+    box-sizing: border-box;
 }
 
 .card.row > .card-rating {
